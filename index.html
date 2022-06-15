@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Re-design</title>
+<link href="https://fonts.google.com/specimen/Poppins" rel="stylesheet">
 
+<style>
+body{background-image: url(images/bg-intro-desktop.png); background-color: #fe7b6d; color: #f5f5f5; font-family: 'Poppins';font-size: 14px;}
+
+.gridcon{display: grid;gap: 1rem;margin: 120px auto;max-width: 960px;}
+
+
+.trial{border: none;border-radius: 8px;text-align: center;background-color: #5D54A3; color: #f5f5f5;box-shadow: 0 8px 12px 0 rgb(0 0 0 /0.2);font-size: 12px;font-weight: 100;padding: 4px;}
+.trial a{text-decoration: none;color: #f5f5f5;}
+.trial:hover{background-color: #746DAF;}
+.form{background-color: #f5f5f5;margin-top: 16px;border: none;border-radius: 8px;box-shadow: 0 8px 12px 0 rgb(0 0 0 /0.2);padding: 16px;}
+
+h1{font-size: 39.81px;line-height: 3rem;}
+
+input[type=text], input[type=email], input[type=password] {width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;font-family:'Poppins';}
+input[type=submit] {width: 100%; background-color: #39cb8a;color: #f5f5f5;font-family: 'Poppins'; border: none;border-radius: 4px;cursor: pointer;padding: 14px 20px;}
+input[type=submit]:hover{background-color: #30ab74;}
+
+form p{color: #000;font-size: 10px;text-align: center;font-weight: 100;}
+form p a{text-decoration: none;color: #fe7b6d;}
+
+@media(min-width:840px){.gridcon{grid-template-columns: repeat(2, 1fr);}}
+</style>
+    </head>
+
+    <body>
+
+<section>
+   <div class="gridcon">
+    <div class="one">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </div>
+
+    <div class="two">
+        <div class="trial">
+            <p><a href=""><strong>Try it free 7 days.</strong> then $20/mo. thereafter</a></p>
+        </div>
+    
+        <div class="form">
+            <form action="/action_page.php" onsubmit="return validateForm()" method="post">
+        
+                <div class="col"><input type="text" id="fname" placeholder="First Name" required></div>
+        
+                <div class="col"><input type="text" id="lname" placeholder="Last Name" required></div>
+        
+                <div class="col"><input type="email" id="email" placeholder="Email Address" required></div>
+        
+                <div class="col"><input type="password" id="Password" placeholder="Password" required></div>
+        
+                <div class="col"><input type="submit" value="CLAIM YOUR FREE TRIAL"></div>
+        
+                <div class="col"><p>By clicking the button, you are agreeing to our <a href=""><strong>Terms and Services</strong></a></p></div>
+                </form>
+                </div>
+    </div>
+   </div>
+</section>
+    </body>
+</html>
